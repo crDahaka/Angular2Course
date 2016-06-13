@@ -14,13 +14,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li [class.active]="isCurrentRoute(['Users'])">
-          <a [routerLink]="['Users']">Users</a>
-        <li [class.active]="isCurrentRoute(['Posts'])">
-          <a [routerLink]="['Posts']">Posts</a>
+        <li [class.active]="isCurrentRoute(['Users'])"><a [routerLink]="['Users']">Users</a></li>
+        <li [class.active]="isCurrentRoute(['Posts'])"><a [routerLink]="['Posts']">Posts</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-<router-outlet></router-outlet>
